@@ -1,0 +1,38 @@
+# Environment
+.env
+.env.local
+*.env
+!.env.example
+!frontend/.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+dist-electron/
+dist/
+
+# Logs
+*.log
+
+# Editors / OS
+.vscode/
+.DS_Store
+
+# Backups (contain personal memory data — never commit)
+backups/
+
+# Chat image attachments (Phase 8) — user-uploaded content, never commit
+backend/data/uploads/
+
+# Local project memory / notes — not part of the public project
+CLAUDE.md
+Projects/
+
+# Session-artifact screenshots that occasionally land in the repo root
+Users*.png

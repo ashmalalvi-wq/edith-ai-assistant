@@ -1,0 +1,36 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.7.0
+httpx==0.28.1
+python-dotenv==1.0.1
+python-multipart==0.0.20   # required by FastAPI's UploadFile (chat image attachments, Phase 8)
+
+# Structured memory (PostgreSQL)
+sqlalchemy==2.0.36
+asyncpg==0.30.0
+aiosqlite==0.20.0
+greenlet==3.1.1
+
+# Semantic memory (Qdrant)
+qdrant-client==1.12.1
+
+# Tools & MCP
+mcp==1.9.4
+
+# Productivity capabilities (Phase 5)
+cryptography==50.0.0          # encrypts OAuth tokens at rest (oauth_credentials table)
+google-auth==2.56.2
+google-auth-oauthlib==1.4.0
+google-api-python-client==2.198.0   # Gmail + Google Calendar
+
+# Engineering capabilities (Phase 6)
+paho-mqtt==2.1.0   # Bambu printer LAN protocol (local MQTTS status/control)
+
+# Automation (Phase 7)
+apscheduler==3.11.3   # cron/interval/one-time job scheduling for automation rules
+watchdog==6.0.0        # filesystem watcher for file-creation triggers
+
+# Tests
+pytest==8.3.4
+pytest-asyncio==0.25.0
